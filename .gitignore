@@ -1,0 +1,20 @@
+
+cat > .gitignore << 'EOF'
+cat > .gitignore << 'EOF'
+# великі медіа не відслідковувати
+media/*.mp4
+media/*.mov
+media/*.avi
+media/*.mkv
+
+# ОС/IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# якщо з'явиться збірка/нода
+node_modules/
+dist/
+build/
+*.log

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Контакти — Олександр Усик</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header>
+  <nav class="nav container">
+    <div class="brand">
+      <div class="badge"></div>
+      <span>Oleksandr Usyk</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Головна</a>
+      <a href="bio.html">Біографія</a>
+      <a href="ratings.html">Рейтинги</a>
+      <a href="trophies.html">Трофеї</a>
+      <a href="media.html">Медіа</a>
+      <a href="contacts.html">Контакти</a>
+    </div>
+  </nav>
+</header>
+  
+  <main class="container">
+
+    <section class="section">
+  <div class="titlebar"><h2>Зворотний зв’язок</h2></div>
+  <form class="ux-form" action="#" method="post">
+    <div class="form-group">
+      <label>Ім’я</label>
+      <input type="text" name="name" placeholder="Ваше ім’я" required>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" name="email" placeholder="name@example.com" required>
+    </div>
+
+    <div class="form-group">
+      <label>Тип запиту</label>
+      <select name="type">
+        <option>Преса / Інтерв’ю</option>
+        <option>Квитки / Події</option>
+        <option>Співпраця / Партнерство</option>
+        <option>Інше</option>
+      </select>
+    </div>
+
+    <fieldset class="form-group">
+      <legend>Пріоритет відповіді</legend>
+      <label><input type="radio" name="prio" value="low" checked> Низький</label>
+      <label><input type="radio" name="prio" value="normal"> Звичайний</label>
+      <label><input type="radio" name="prio" value="high"> Високий</label>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <legend>Цікавлять матеріали</legend>
+      <label><input type="checkbox" name="assets" value="photo"> Фото</label>
+      <label><input type="checkbox" name="assets" value="video"> Відео</label>
+      <label><input type="checkbox" name="assets" value="stats"> Статистика</label>
+    </fieldset>
+
+    <div class="form-group">
+      <label>Бажана дата контакту</label>
+      <input type="date" name="date">
+    </div>
+    <div class="form-group">
+      <label>Терміновість</label>
+      <input type="range" name="urgency" min="0" max="10" value="5">
+    </div>
+
+    <div class="form-group" style="flex:1 1 100%">
+      <label>Повідомлення</label>
+      <textarea name="message" rows="5" placeholder="Коротко опишіть запит"></textarea>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="button">Надіслати</button>
+      <button type="reset" class="button" style="opacity:.85">Очистити</button>
+    </div>
+  </form>
+</section>
+
+    
+<section class="section">
+  <div class="titlebar"><h2>Контакти</h2></div>
+  <div class="card">
+    <p>Прес-запити: <a href="mailto:press@usyk.example">press@usyk.example</a></p>
+    <p>Агент / Менеджмент: <strong>—</strong></p>
+  </div>
+</section>
+
+  </main>
+  <footer>
+    <div class="foot container">© 2025 Usyk</div>
+  </footer>
+</body>
+</html>
